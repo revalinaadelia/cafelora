@@ -207,7 +207,7 @@ Aplikasi dan perangkat berikut harus sudah terpasang pada komputer:
 6. **Web browser modern** untuk menjalankan dan menguji aplikasi.
 
 ---
-🛠️ Langkah Implementasi
+## 🛠️ Langkah Implementasi
 
 ---
 ## 💻 Penjelasan Kode
@@ -316,6 +316,8 @@ php artisan route:clear
 
 ### 2. Admin (CRUD)
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eac56b52-11a1-45d0-abb7-2820cb31ba6a" />
+
 #### Create
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb1c902b-ebe0-4ca0-996d-be10add8d1f0" />
@@ -323,6 +325,8 @@ php artisan route:clear
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bceec15a-094d-4127-9241-53f79c2cd333" />
 
 #### Read
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/14a429b5-b182-49e2-8926-51499598cff5" />
 
 #### Update
 
@@ -338,7 +342,31 @@ php artisan route:clear
 
 ### 3. Staff (Create, Edit, View)
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/678b67f7-4235-4286-a66e-632cb53b6850" />
+
+#### Create
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6c72e068-3203-444f-a01d-7381a4961e11" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/958901c7-e300-424a-bced-d9cb9ddcfddb" />
+
+#### Edit
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/adb7f2c7-667a-4724-a773-daec967fb3c3" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d81f85c5-50b8-44ec-b671-07a81d9b07c5" />
+
+#### View
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df499fa6-aedd-4155-9b03-2db8f806c8a4" />
+
 ### 4. Viewer (View)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1e32d433-7a5f-4645-a58e-5691d0b7c106" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7438c91f-5078-4e72-a0a1-7c2b3c9d463d" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1cce5123-07ea-4f28-a2e0-2c6e68cecb7f" />
 
 ### 5. Widget (Total Books, Total Authors, dan Books Available vs Borrowed (Chart/Stats))
 
