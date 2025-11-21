@@ -209,6 +209,40 @@ Aplikasi dan perangkat berikut harus sudah terpasang pada komputer:
 ---
 ## 🛠️ Langkah Implementasi
 
+### 1. Menambahkan Field Description pada Book
+
+1. Memodifikasi struktur database dengan menambahkan kolom `description` pada migration tabel `books`.
+2. Menambahkan atribut mass assignment dengan memasukkan `description` ke dalam `$fillable` pada model `Book`.
+3. Mengubah form input Filament pada `BookResource` dengan menambahkan komponen `Textarea` agar user dapat mengisi deskripsi saat membuat dan mengedit buku.
+4. Menambah data dummy deskripsi pada `BookFactory` menggunakan `fake()->paragraph()` untuk mendukung seeding.
+5. Menjalankan ulang migrasi dan seeder dengan perintah `php artisan migrate:fresh --seed`. Tahapan ini membentuk alur lengkap mulai dari database -> model -> form -> factory.
+
+### 2. Implementasi Role-Based Access Control (RBAC)
+
+1. Menambahkan kolom baru `role` pada tabel `users` lewat migration yang sudah tersedia.
+2. Membuat konfigurasi role di model dengan menambahkan field `role` ke `$fillable` agar dapat diisi oleh seeder.
+3. Membangun tiga akun pengguna (admin, staff, viewer) melalui DatabaseSeeder untuk pengujian hak akses.
+4. Menyusun aturan akses di BookPolicy sesuai ketentuan: Admin memiliki full access, Staff dpaat create/edit/view, dan Viewer hanya view.
+5. Menyembunyikan tombol delete di BookResource agar hanya admin yang dapat menghapus buku.
+6. Menjalankan ulang migrasi + seeder setelah perubahan model & policy `php artisan migrate:fresh --seed`. Tahapan ini memastikan hak akses berjalan sesuai role dan terintegrasi dengan UI Filament.
+
+### 3. Penambahan Widget Dashboard
+
+1. Membuat widget statistik menggunakan perintah Filament `php artisan make:filament-widget LibraryStatsWidget`. Widget kemudian diisi dengan data total buku, total penulis, serta ringkasan status buku (available/borrowed).
+2. Membuat widget grafik `php artisan make:filament-widget BooksChart --chart`.
+3. Mengonfigurasi data grafik berdasarkan jumlah buku available dan borrowed.
+4. Mendaftarkan widget ke dashboard (otomatis oleh Filament Panel Provider).
+
+### 4. Penambahan Fitur Kategori Buku (Many-to-Many)
+
+1. Membuat model Category beserta migration tabel `categories`.
+2. Membuat migration tabel pivot `book_category` untuk relasi Many-to-Many.
+3. Menambahkan relasi `belongsToMany()` pada model Book dan Category.
+4. Mengubah form BookResource agar user dapat memilih banyak kategori dengan komponen `Select` berfitur multiple, preload, dan searchable.
+5. Membuat CategorySeeder berisi 20 kategori awal.
+6. Menghubungkan kategori ke buku secara acak pada DatabaseSeeder menggunakan method `attach()`.
+7. Menjalankan ulang migrasi + seeder `php artisan migrate:fresh --seed`.
+   
 ---
 ## 💻 Penjelasan Kode
 
@@ -317,7 +351,7 @@ File: `database/seeders/DatabaseSeeder.php`
 
 Tiga akun dibuat untuk pengujian RBAC:
 1. Admin -> akses penuh
-2. Staff -> bisa create/view
+2. Staff -> bisa create, edit, view
 3. Viewer -> hanya bisa view
 
 #### d. Policy (Aturan Akses pada Buku)
