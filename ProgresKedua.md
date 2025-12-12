@@ -271,7 +271,7 @@ Bagian ini digunakan untuk mengetahui fitur apa saja yang *sudah selesai dan sud
 | 2   | Filter Laporan             | Filter tanggal & status belum terhubung backend      | 🔄 Dalam Progres     | 8-14 Desember 2025  |
 | 3   | Export PDf/Excel           | Tombol tampil, backend belum final                   | 🔄 Dalam Progres     | 8-14 Desember 2025  |
 | 4   | Workflow Status Transaksi  | Status pending → paid → completed belum terintegrasi | 🔄 Dalam Progres     | 8-14 Desember 2025  |
-| 5   | Dokumentasi README         | Struktur sudah tersusun dan sedang diisi             | 🔄 Dalam Progres     | 8-14 November 2025  |
+| 5   | Dokumentasi README         | Struktur sudah tersusun dan sedang diisi             | 🔄 Dalam Progres     | 8-14 Desember 2025  |
 
 ---
 ## Struktur Folder Sementara
