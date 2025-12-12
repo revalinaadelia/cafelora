@@ -215,22 +215,22 @@ Bagian ini digunakan untuk mengetahui fitur apa saja yang *sudah selesai dan sud
 
 ### 1. Chaerul Cahyadi (Ketua): Struktur Proyek, Integrasi Transaksi, Dashboard, Review Fitur
 
-| No. | Fitur yang Diuji                  | Deskripsi Uji                                                            | Status                                  | Tanggal Mulai     |
-|-----|-----------------------------------|--------------------------------------------------------------------------|-----------------------------------------|-------------------|
-| 1   | Struktur Proyek & Routing         | Mengecek konsistensi struktur folder, routing utama, dan manajemen modul | ✅ Selesai & Stabil                     | 26 November 2025  |
-| 2   | Integrasi Logika Transaksi (Awal) | Memastikan relasi model transaksi & item berjalan awalnya                | 🔄 Dalam Progres (Bergantung POS Kasir) | 2-8 November 2025 |
-| 3   | Dashboard Admin                   | Visualisasi dasar sudah tampil, grafik belum 100% data real-time         | 🔄 Dalam Progres                        | 2-8 November 2025 |
-| 4   | Review & Validasi Fitur           | Pengecekan keseluruhan fitur anggota lain                                | 🔄 Berjalan Bertahap                    | 26 November 2025  |
+| No. | Fitur yang Diuji                  | Deskripsi Uji                                                            | Status                                  | Tanggal Mulai       |
+|-----|-----------------------------------|--------------------------------------------------------------------------|-----------------------------------------|---------------------|
+| 1   | Struktur Proyek & Routing         | Mengecek konsistensi struktur folder, routing utama, dan manajemen modul | ✅ Selesai & Stabil                     | 26 November 2025    |
+| 2   | Integrasi Logika Transaksi (Awal) | Memastikan relasi model transaksi & item berjalan awalnya                | 🔄 Dalam Progres (Bergantung POS Kasir) | 12-14 Desember 2025 |
+| 3   | Dashboard Admin                   | Visualisasi dasar sudah tampil, grafik belum 100% data real-time         | 🔄 Dalam Progres                        | 12-14 Desember 2025 |
+| 4   | Review & Validasi Fitur           | Pengecekan keseluruhan fitur anggota lain                                | 🔄 Berjalan Bertahap                    | 12-14 Desember 2025 |
 
 ### 2. Arya Wicaksana Putra: ERD, CRUD Master Data, Validasi Form, Upload Gambar
 
 | No. | Fitur yang Diuji   | Deskripsi Uji                                                  | Status                       | Tanggal Mulai    |
 |-----|--------------------|----------------------------------------------------------------|------------------------------|------------------|
-| 1   | Desain ERD         | ERD diverifikasi dan konsisten dengan model Laravel            | ✅ Selesai                   | 26 November 2025 |
-| 2   | CRUD Kategori      | Tambah, edit, hapus, dan list kategori berjalan baik           | ✅ Selesai & Berjalan Normal | 26 November 2025 |
-| 3   | CRUD Topping       | Form & relasi topping berhasil disimpan                        | ✅ Selesai                   | 26 November 2025 |
-| 4   | Validasi Form      | Field wajib terisi, format harga, dan input gambar tervalidasi | ✅ Selesai                   | 26 November 2025 |
-| 5   | Upload Gambar Menu | Mengunggah gambar ke storage dan menampilkannya di card menu   | ✅ Selesai                   | 26 November 2025 |
+| 1   | Desain ERD         | ERD diverifikasi dan konsisten dengan model Laravel            | ✅ Selesai                   | 29 November 2025 |
+| 2   | CRUD Kategori      | Tambah, edit, hapus, dan list kategori berjalan baik           | ✅ Selesai & Berjalan Normal | 29 November 2025 |
+| 3   | CRUD Topping       | Form & relasi topping berhasil disimpan                        | ✅ Selesai                   | 29 November 2025 |
+| 4   | Validasi Form      | Field wajib terisi, format harga, dan input gambar tervalidasi | ✅ Selesai                   | 29 November 2025 |
+| 5   | Upload Gambar Menu | Mengunggah gambar ke storage dan menampilkannya di card menu   | ✅ Selesai                   | 29 November 2025 |
 
 ### 3. Aditya Nur Lintang: Setup Laravel, Filament, Role, Policy, User Management
 
@@ -254,24 +254,24 @@ Bagian ini digunakan untuk mengetahui fitur apa saja yang *sudah selesai dan sud
 
 ### 5. Muhammad Fauzan: POS Kasir – Repeater Item, Perhitungan, Cetak Struk
 
-| No. | Fitur yang Diuji          | Deskripsi Uji                                     | Status                   | Tanggal Mulai     |
-|-----|---------------------------|---------------------------------------------------|--------------------------|-------------------|
-| 1   | Tampilan Awal POS         | Repeater dasar tampil                             | ✅ UI Dasar Berjalan     | 2-8 November 2025 |
-| 2   | Penambahan Item Transaksi | Penambahan baris item berhasil                    | 🟡 Perlu Logika Tambahan | 2-8 November 2025 |
-| 3   | Dropdown Menu & Varian    | Dropdown tampil, harga belum sepenuhnya otomatis  | 🔄 Dalam Progres         | 2-8 November 2025 |
-| 4   | Kalkulasi Total Otomatis  | Subtotal & total belum final                      | ⏳ Belum Selesai         | 2-8 November 2025 |
-| 5   | Input Bayar & Kembalian   | Field muncul, logika backend belum lengkap        | 🔄 Dalam Progres         | 2-8 November 2025 |
-| 6   | Cetak Struk HTML/PDF      | Template awal ada, belum final                    | 🔄 Dalam Progres         | 2-8 November 2025 |
+| No. | Fitur yang Diuji          | Deskripsi Uji                                     | Status                   | Tanggal Mulai       |
+|-----|---------------------------|---------------------------------------------------|--------------------------|---------------------|
+| 1   | Tampilan Awal POS         | Repeater dasar tampil dan card tampil responsif   | ✅ Selesai               | 17 November 2025    |
+| 2   | Penambahan Item Transaksi | Penambahan baris item berhasil dilakukan          | ✅ Selesai               | 5 Desember 2025     |
+| 3   | Dropdown Menu & Varian    | Dropdown dan harga tampil dengan otomatisasi      | ✅ Selesai               | 8 Desember 2025     |
+| 4   | Kalkulasi Total Otomatis  | Subtotal & total keseluruhan item otomatis        | ✅ Selesai               | 10 Desember 2025    |
+| 5   | Input Bayar & Kembalian   | Field muncul, logika backend lengkap              | ✅ Selesai               | 10 Desember 2025    |
+| 6   | Cetak Struk HTML/PDF      | Template awal ada, belum final                    | 🔄 Dalam Progres         | 12-14 Desember 2025 |
 
 ### 6. Revalina Adelia: Laporan, Export PDF/Excel, Workflow Transaksi, Dokumentasi
 
 | No. | Fitur yang Diuji           | Deskripsi Uji                                        | Status               | Tanggal Mulai       |
 |-----|----------------------------|------------------------------------------------------|----------------------|---------------------|
-| 1   | Halaman Laporan            | Tabel laporan tampil                                 | 🔄 Dalam Progres     | 8-14 Desember 2025  |
-| 2   | Filter Laporan             | Filter tanggal & status belum terhubung backend      | 🔄 Dalam Progres     | 8-14 Desember 2025  |
-| 3   | Export PDf/Excel           | Tombol tampil, backend belum final                   | 🔄 Dalam Progres     | 8-14 Desember 2025  |
-| 4   | Workflow Status Transaksi  | Status pending → paid → completed belum terintegrasi | 🔄 Dalam Progres     | 8-14 Desember 2025  |
-| 5   | Dokumentasi README         | Struktur sudah tersusun dan sedang diisi             | 🔄 Dalam Progres     | 8-14 Desember 2025  |
+| 1   | Halaman Laporan            | Tabel laporan tampil                                 | 🔄 Dalam Progres     | 12-14 Desember 2025 |
+| 2   | Filter Laporan             | Filter tanggal & status belum terhubung backend      | 🔄 Dalam Progres     | 12-14 Desember 2025 |
+| 3   | Export PDf/Excel           | Tombol tampil, backend belum final                   | 🔄 Dalam Progres     | 12-14 Desember 2025 |
+| 4   | Workflow Status Transaksi  | Status pending → paid → completed belum terintegrasi | 🔄 Dalam Progres     | 12-14 Desember 2025 |
+| 5   | Dokumentasi README         | Struktur sudah tersusun dan sedang diisi             | 🔄 Berjalan Bertahap | 1-14 Desember 2025  |
 
 ---
 ## Struktur Folder Sementara
