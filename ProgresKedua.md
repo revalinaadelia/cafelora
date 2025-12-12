@@ -414,7 +414,7 @@ Aplikasi ini dibangun menggunakan beberapa teknologi utama yang mendukung backen
 Sebelum menjalankan aplikasi, pastikan perangkat sudah memenuhi persyaratan berikut:
 
 1. **PHP >= 8.2**                : Versi PHP yang kompatibel dengan Laravel 12.
-2. ***Composer**                 : Untuk mengelola dependency PHP.
+2. **Composer**                 : Untuk mengelola dependency PHP.
 3. **Node.js & NPM**             : Untuk menjalankan script frontend dan build assets.
 4. **MySQL** atau **PostgreSQL** : Database untuk menyimpan data aplikasi.
 5. **Web Server**                : Seperti Apache atau Nginx, atau bisa menggunakan Laravel built-in server.
@@ -515,3 +515,42 @@ php artisan serve
 ```
 
 Perintah ini menjalankan **Laravel built-in server** sehingga aplikasi bisa diakses melalui browser. Default URL:http://127.0.0.1:8000
+
+---
+## Rencana Pengembangan Berikutnya
+
+Berikut agenda pengembangan yang **masih belum selesai** berdasarkan progres saat ini:
+
+### 1. Integrasi Transaksi End-to-End (POS -> Database)
+
+Menyempurnakan alur penyimpanan transaksi dari POS (item, varian, topping, subtotal, total) agar data konsisten dan valid.
+
+### 2. Finalisasi Cetak Struk (HTML/PDF)
+
+Merapikan template struk dan memastikan struk mengambil data transaksi yang benar (nama item, qty, harga, total, bayar, kembalian, waktu, nomor transaksi).
+
+### 3. Workflow Status Transaksi (Pending -> Paid -> Completed)
+
+Menghubungkan perubahan status transaksi dengan aturan role/policy, serta memastikan status memengaruhi laporan dan dashboard.
+
+### 4. Penyelesaian Halaman Laporan + Filter
+
+Mengaktifkan filter laporan berdasarkan **rentang tanggal** dan **status transaksi** agar monitoring lebih mudah dan akurat.
+
+### 5. Export Laporan (PDF/Excel)
+
+Menyelesaikan backend export dan memastikan hasil export mengikuti filter (tanggal/status) dengan format yang rapi.
+
+### 6. Penyempurnaan Dashboard Admin
+
+Menghubungkan grafik dan ringkasan (pendapatan harian/bulanan) ke data transaksi real-time agar update otomatis.
+
+### 7. Final Review & Bug Fixing
+
+Uji per role (Admin/Staff/Pelanggan), perbaikan bug integrasi, serta memastikan fitur yang sudah selesai tetap stabil.
+
+### 8. Fitur Opsional (Jika Waktu Memungkinkan)
+
+Chart penjualan 7 hari terakhir, filter laporan lebih detail, dan integrasi payment gateway (Midtrans/Xendit).
+
+---
