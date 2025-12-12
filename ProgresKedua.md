@@ -135,7 +135,7 @@ Lakukan checkout dari **main** terbaru:
 ```bash
 git checkout main
 git pull origin main
-git checkout -b dev-budi-crud-produk
+git checkout -b dev-revalina-dokumentasi
 ```
 <img width="645" height="135" alt="git pull" src="https://github.com/user-attachments/assets/50e582e7-ed0b-4808-bf65-caa99b65e8ad" />
 
