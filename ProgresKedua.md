@@ -245,12 +245,12 @@ Bagian ini digunakan untuk mengetahui fitur apa saja yang *sudah selesai dan sud
 
 | No. | Fitur yang Diuji    | Deskripsi Uji                      | Status     | Tanggal Mulai    |
 |-----|---------------------|------------------------------------|------------|------------------|
-| 1   | Tampilan Grid Menu  | Card tampil responsif              | ✅ Selesai | 26 November 2025 |
-| 2   | Filter Kategori     | Menu menyesuaikan pilihan kategori | ✅ Selesai | 26 November 2025 |
-| 3   | Filter Varian       | Menu berganti sesuai varian        | ✅ Selesai | 26 November 2025 |
-| 4   | Komponen Card Menu  | Gambar, nama, harga tampil baik    | ✅ Selesai | 26 November 2025 |
-| 5   | Halaman Detail Menu | Informasi menu tampil lengkap      | ✅ Selesai | 26 November 2025 |
-| 6   | Responsivitas UI    | Mobile & desktop tampak konsisten  | ✅ Selesai | 26 November 2025 |
+| 1   | Tampilan Grid Menu  | Card tampil responsif              | ✅ Selesai | 30 November 2025 |
+| 2   | Filter Kategori     | Menu menyesuaikan pilihan kategori | ✅ Selesai | 8 Desember 2025  |
+| 3   | Filter Harga        | Menu berganti sesuai harga min/max | ✅ Selesai | 8 Desember 2025  |
+| 4   | Komponen Card Menu  | Gambar, nama, harga tampil baik    | ✅ Selesai | 6 Desember 2025  |
+| 5   | Halaman Detail Menu | Informasi menu tampil lengkap      | ✅ Selesai | 12 Desember 2025 |
+| 6   | Responsivitas UI    | Mobile & desktop tampak konsisten  | ✅ Selesai | 30 November 2025 |
 
 ### 5. Muhammad Fauzan: POS Kasir – Repeater Item, Perhitungan, Cetak Struk
 
@@ -265,13 +265,13 @@ Bagian ini digunakan untuk mengetahui fitur apa saja yang *sudah selesai dan sud
 
 ### 6. Revalina Adelia: Laporan, Export PDF/Excel, Workflow Transaksi, Dokumentasi
 
-| No. | Fitur yang Diuji           | Deskripsi Uji                                        | Status               | Tanggal Mulai     |
-|-----|----------------------------|------------------------------------------------------|----------------------|-------------------|
-| 1   | Halaman Laporan            | Tabel laporan tampil                                 | ✅ UI Dasar Berjalan | 2-8 November 2025 |
-| 2   | Filter Laporan             | Filter tanggal & status belum terhubung backend      | 🔄 Dalam Progres     | 2-8 November 2025 |
-| 3   | Export PDf/Excel           | Tombol tampil, backend belum final                   | 🔄 Dalam Progres     | 2-8 November 2025 |
-| 4   | Workflow Status Transaksi  | Status pending → paid → completed belum terintegrasi | ⏳ Belum Selesai     | 2-8 November 2025 |
-| 5   | Dokumentasi README         | Struktur sudah tersusun dan sedang diisi             | 🔄 Dalam Progres     | 2-8 November 2025 |
+| No. | Fitur yang Diuji           | Deskripsi Uji                                        | Status               | Tanggal Mulai       |
+|-----|----------------------------|------------------------------------------------------|----------------------|---------------------|
+| 1   | Halaman Laporan            | Tabel laporan tampil                                 | 🔄 Dalam Progres     | 8-14 Desember 2025  |
+| 2   | Filter Laporan             | Filter tanggal & status belum terhubung backend      | 🔄 Dalam Progres     | 8-14 Desember 2025  |
+| 3   | Export PDf/Excel           | Tombol tampil, backend belum final                   | 🔄 Dalam Progres     | 8-14 Desember 2025  |
+| 4   | Workflow Status Transaksi  | Status pending → paid → completed belum terintegrasi | 🔄 Dalam Progres     | 8-14 Desember 2025  |
+| 5   | Dokumentasi README         | Struktur sudah tersusun dan sedang diisi             | 🔄 Dalam Progres     | 8-14 November 2025  |
 
 ---
 ## Struktur Folder Sementara
@@ -325,23 +325,71 @@ CAFELORA/
 ---
 ## Hasil Tampilan
 
-### 1. Minggu, 30 November 2025 (Frontend Menu)
+### 1. Sabtu, 29 November 2025 (Halaman Admin) 
+
+#### Dashboard Admin
+
+<img width="453" height="254" alt="Dashboard Admin" src="https://github.com/user-attachments/assets/af8be677-b9d2-4f58-a589-148d52f0992c" />
+
+#### Halaman Users
+
+<img width="451" height="253" alt="Users" src="https://github.com/user-attachments/assets/a0f93265-7cd5-480b-b4e5-5e2cd81de9cb" />
+
+#### Halaman Categories
+
+<img width="453" height="254" alt="Categories" src="https://github.com/user-attachments/assets/a4f6929c-a86d-466f-98d4-59dc88af0081" />
+
+#### Halaman Menus
+
+<img width="451" height="253" alt="Menus" src="https://github.com/user-attachments/assets/16248836-54bc-4377-9721-577b6b4feaea" />
+
+#### Halaman Toppings
+
+<img width="454" height="254" alt="Toppings" src="https://github.com/user-attachments/assets/320a4f01-12fc-4acf-9bf3-e1e058f663e6" />
+
+#### Halaman Variants
+
+<img width="456" height="256" alt="Variants" src="https://github.com/user-attachments/assets/28372b5a-2a52-466c-8bdf-c1d42742f1fc" />
+
+### 2. Sabtu, 29 November 2025 (Halaman Staff)
+
+#### Dashboard Staff
+
+<img width="456" height="258" alt="Dashboard Staff" src="https://github.com/user-attachments/assets/dd050586-b2bc-473b-85e4-b62f8aac351e" />
+
+#### Halaman Categories
+
+<img width="453" height="254" alt="Categories Staff" src="https://github.com/user-attachments/assets/485b876b-96b5-4019-b36d-dc372ab09b0e" />
+
+#### Halaman Menus
+
+<img width="456" height="258" alt="Menus Staff" src="https://github.com/user-attachments/assets/6a6e2cb0-c5cf-4a6b-9dca-a76fd70387e8" />
+
+#### Halaman Toppings
+
+<img width="454" height="254" alt="Toppings Staff" src="https://github.com/user-attachments/assets/2b1ff78e-bd96-4295-b6be-638f00fd6bfa" />
+
+#### Halaman Variants
+
+<img width="454" height="258" alt="Variants Staff" src="https://github.com/user-attachments/assets/f854fbee-4dad-4244-9ff5-b8a2f21e70a2" />
+
+### 3. Minggu, 30 November 2025 (Frontend Menu)
 
 <img width="504" height="285" alt="Frontend Menu" src="https://github.com/user-attachments/assets/9874384d-a01d-4814-bc84-44a1e30dbb90" />
 
-### 2. Sabtu, 6 Desember 2025 (Frontend Menu)
+### 4. Sabtu, 6 Desember 2025 (Frontend Menu)
 
 <img width="602" height="339" alt="Frontend Menu 2" src="https://github.com/user-attachments/assets/5901c06e-68e2-4065-a534-06c17f1d2b9a" />
 
-### 3. Senin, 8 Desember 2025 (Frontend Menu)
+### 5. Senin, 8 Desember 2025 (Frontend Menu)
 
 <img width="602" height="339" alt="Frontend Menu 3" src="https://github.com/user-attachments/assets/e0909022-6350-4f00-80d0-7f5d72f94c81" />
 
-### 4. Rabu, 10 Desember 2025 (POS)
+### 6. Rabu, 10 Desember 2025 (POS)
 
 <img width="602" height="376" alt="POS 1" src="https://github.com/user-attachments/assets/4e1bc6ca-be53-4e2b-8e59-a36b48e075c6" />
 
-### 5. Jum'at, 12 Desember 2025 (POS)
+### 7. Jum'at, 12 Desember 2025 (POS)
 
 <img width="602" height="376" alt="POS 2" src="https://github.com/user-attachments/assets/461c0f5f-d486-4f18-b172-9b1843339fe3" />
 
