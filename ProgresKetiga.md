@@ -594,8 +594,11 @@ Alur Midtrans di Cafelora itu sederhana dan rapi. Pelanggan cukup melihat daftar
 2. Kirim payload:
 
 a. transaction_details: order_id, gross_amount
+
 b. item_details: list item (menu, topping) dengan price dan qty
+
 c. customer_details: nama, email, hp (bisa data kasir jika offline)
+
 d. callbacks atau expiry jika dipakai
 
 3. Midtrans balikin snap_token dan redirect_url.
@@ -627,22 +630,31 @@ POST /api/midtrans/notify
 2. Backend verifikasi:
 
 a. validasi signature key (Midtrans signature)
+
 b. cocokkan order_id dengan transaksi di DB
 
 3. Backend mapping status Midtrans:
+
 a. transaction_status=settlement atau capture -> set paid
+
 b. pending -> set pending
+
 c. deny, cancel, expire -> set sesuai
+
 d. refund / chargeback -> set refunded / chargeback
 
 4. Update DB secara idempotent:
 
 a. kalau status sudah paid, jangan overwrite jadi pending
+
 b. simpan raw payload untuk audit
 
 5. Trigger proses lanjutan:
+
 a. set paid_at
+
 b. kurangi stok
+
 c. generate nomor struk dan data print
 
 ---
@@ -660,6 +672,7 @@ c. generate nomor struk dan data print
 2. Jalankan cron job untuk transaksi pending yang lama:
 
 a. query status ke Midtrans
+
 b. update DB jika sudah settle atau expire
 
 ---
@@ -672,7 +685,9 @@ b. update DB jika sudah settle atau expire
 3. Endpoint webhook harus:
 
 a. tanpa auth user biasa
+
 b. diproteksi signature verification
+
 c. rate limit dan log request
 
 4. Pastikan order_id unik dan tidak dipakai ulang.
