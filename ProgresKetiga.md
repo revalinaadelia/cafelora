@@ -94,7 +94,7 @@ Pelanggan merupakan pengguna sistem pada sisi frontend. Pelanggan dapat mengakse
 9. Sistem dapat mengelola status transaksi mulai dari pemesanan hingga transaksi selesai sesuai dengan alur yang telah ditentukan.
 10. Sistem dapat menghasilkan struk transaksi dalam bentuk digital yang dapat dicetak atau disimpan dalam format HTML atau PDF.
 11. Sistem dapat menampilkan daftar menu makanan dan minuman kepada pelanggan secara jelas dan terstruktur melalui antarmuka frontend.
-12. Sistem dapat menyediakan fitur pencarian atau filter menu berdasarkan kategori dan varian untuk memudahkan pelanggan dalam memilih menu.
+12. Sistem dapat menyediakan fitur pencarian atau filter menu berdasarkan nama, harga, dan kategori untuk memudahkan pelanggan dalam memilih menu.
 13. Sistem dapat menghasilkan laporan transaksi penjualan berdasarkan periode tertentu untuk membantu evaluasi usaha.
 14. Sistem dapat menampilkan grafik atau chart penjualan sebagai ringkasan performa transaksi harian dan bulanan.
 15. Sistem dapat mengekspor laporan transaksi ke dalam format PDF atau Excel untuk kebutuhan dokumentasi dan analisis lanjutan.
