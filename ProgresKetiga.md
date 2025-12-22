@@ -553,10 +553,10 @@ Midtrans adalah layanan payment gateway di Indonesia yang membantu bisnis meneri
 
 ## Lingkup Pendukung
 
-Website Utama: https://midtrans.com/
-Halaman Dashboard Production: https://dashboard.midtrans.com/l
-Halaman Dashboard Sandbox: https://dashboard.sandbox.midtrans.com/
-Github: https://github.com/Midtrans/midtrans-php
+1. Website Utama: https://midtrans.com/
+2. Halaman Dashboard Production: https://dashboard.midtrans.com/l
+3. Halaman Dashboard Sandbox: https://dashboard.sandbox.midtrans.com/
+4. Github: https://github.com/Midtrans/midtrans-php
 
 ## Alur Kerja Midtrans secara Umum
 
@@ -590,40 +590,56 @@ Alur Midtrans di Cafelora itu sederhana dan rapi. Pelanggan cukup melihat daftar
 ### 4. Request ke Midtrans untuk Generate Pembayaran
 
 1. Backend panggil API Midtrans Snap untuk create transaction.
+
 2. Kirim payload:
+
 a. transaction_details: order_id, gross_amount
 b. item_details: list item (menu, topping) dengan price dan qty
 c. customer_details: nama, email, hp (bisa data kasir jika offline)
 d. callbacks atau expiry jika dipakai
+
 3. Midtrans balikin snap_token dan redirect_url.
+
 4. Backend simpan snap_token dan redirect_url ke DB.
 
 ---
 ### 5. Menampilkan UI Pembayaran
 
 1. Frontend POS load Snap.js pakai clientKey.
+
 2. Saat klik “Bayar”, frontend panggil endpoint backend untuk ambil snap_token.
+
 3. Frontend menjalankan snap.pay(snapToken, callbacks...) untuk munculin popup pembayaran.
+
 4. Callback frontend:
+
 onSuccess, onPending, onError, onClose
+
 5. Catatan: callback frontend hanya untuk UX. Sumber kebenaran tetap webhook.
 
 ---
 ### 6. Notifikasi Status via Webhook
 
 1. Midtrans kirim HTTP POST ke endpoint webhook kamu, contoh:
+
 POST /api/midtrans/notify
+
 2. Backend verifikasi:
+
 a. validasi signature key (Midtrans signature)
 b. cocokkan order_id dengan transaksi di DB
+
 3. Backend mapping status Midtrans:
 a. transaction_status=settlement atau capture -> set paid
 b. pending -> set pending
 c. deny, cancel, expire -> set sesuai
 d. refund / chargeback -> set refunded / chargeback
+
 4. Update DB secara idempotent:
+
 a. kalau status sudah paid, jangan overwrite jadi pending
 b. simpan raw payload untuk audit
+
 5. Trigger proses lanjutan:
 a. set paid_at
 b. kurangi stok
@@ -640,7 +656,9 @@ c. generate nomor struk dan data print
 ### 8. Rekonsiliasi dan Fallback
 
 1. Jika webhook telat, backend bisa cek status via API Midtrans (Status API) berdasarkan order_id.
+
 2. Jalankan cron job untuk transaksi pending yang lama:
+
 a. query status ke Midtrans
 b. update DB jika sudah settle atau expire
 
@@ -648,11 +666,15 @@ b. update DB jika sudah settle atau expire
 ### 9. Keamanan dan Best Practice
 
 1. Server Key hanya di backend. Jangan taruh di frontend.
+
 2. Semua total dihitung di backend.
+
 3. Endpoint webhook harus:
+
 a. tanpa auth user biasa
 b. diproteksi signature verification
 c. rate limit dan log request
+
 4. Pastikan order_id unik dan tidak dipakai ulang.
 
 ---
